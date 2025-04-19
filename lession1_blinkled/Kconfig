@@ -1,0 +1,7 @@
+menu "Test LED Driver"
+
+config DEMO_LED
+	tristate "LED Demo"
+	help
+	  LED Driver IMX
+endmenu

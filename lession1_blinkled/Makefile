@@ -1,0 +1,1 @@
+obj-$(CONFIG_DEMO_LED) += led.o
