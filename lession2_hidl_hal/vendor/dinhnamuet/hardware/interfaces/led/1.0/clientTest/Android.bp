@@ -1,0 +1,13 @@
+cc_binary {
+    name: "testLedHidl",
+    relative_install_path: "hw",
+    defaults: ["hidl_defaults"],
+    vendor: true,
+    srcs: ["testLed.cpp"],
+    shared_libs: [
+        "libhidlbase",
+        "libutils",
+        "liblog",
+        "vendor.dinhnamuet.led@1.0",
+    ],
+}

@@ -1,0 +1,6 @@
+package vendor.dinhnamuet.led@1.0;
+
+interface ILed {
+    getLed(int32_t index) generates (int32_t value);
+    setLed(int32_t index, int32_t value) generates (int32_t result);
+};

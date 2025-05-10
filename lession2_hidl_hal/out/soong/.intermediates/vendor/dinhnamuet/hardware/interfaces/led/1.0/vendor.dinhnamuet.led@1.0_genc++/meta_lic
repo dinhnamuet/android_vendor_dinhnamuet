@@ -1,0 +1,15 @@
+package_name:  ""
+module_types:  "hidl_interface.go_android/soong/hidl.hidlGenFactory_loadHookModule"
+module_classes:  "UNKNOWN"
+projects:  "vendor/dinhnamuet/hardware/interfaces/led/1.0"
+is_container:  false
+built:  "//vendor/dinhnamuet/hardware/interfaces/led/1.0:vendor.dinhnamuet.led@1.0_genc++"
+deps:  {
+  file:  "out/soong/.intermediates/system/libhidl/transport/base/1.0/android.hidl.base@1.0_interface/meta_lic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/1.0/vendor.dinhnamuet.led@1.0_interface/meta_lic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/vendor.dinhnamuet/meta_lic"
+}

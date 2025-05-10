@@ -1,0 +1,10 @@
+hidl_interface {
+    name: "vendor.dinhnamuet.led@1.0",
+    root: "vendor.dinhnamuet",
+    srcs: ["ILed.hal"],
+    interfaces: [
+        "android.hidl.base@1.0",
+    ],
+    gen_java: true,
+    vendor: false,
+}

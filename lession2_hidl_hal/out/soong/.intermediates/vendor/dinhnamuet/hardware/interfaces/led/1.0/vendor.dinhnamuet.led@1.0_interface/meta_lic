@@ -1,0 +1,9 @@
+package_name:  ""
+module_types:  "hidl_interface"
+module_classes:  "UNKNOWN"
+projects:  "vendor/dinhnamuet/hardware/interfaces/led/1.0"
+is_container:  false
+built:  "//vendor/dinhnamuet/hardware/interfaces/led/1.0:vendor.dinhnamuet.led@1.0_interface"
+deps:  {
+  file:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/vendor.dinhnamuet/meta_lic"
+}

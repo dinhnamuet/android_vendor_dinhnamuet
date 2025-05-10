@@ -1,0 +1,1 @@
+-mt hidl_package_root -r vendor/dinhnamuet/hardware/interfaces/led -mc UNKNOWN       -t //vendor/dinhnamuet/hardware/interfaces/led:vendor.dinhnamuet 

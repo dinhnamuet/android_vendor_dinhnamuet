@@ -1,0 +1,72 @@
+package_name:  ""
+module_types:  "cc_library_loadHookModule"
+module_classes:  "UNKNOWN"
+projects:  "vendor/dinhnamuet/hardware/interfaces/led/1.0"
+is_container:  false
+built:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/1.0/vendor.dinhnamuet.led@1.0/android_vendor.33_arm64_armv8-a_cortex-a53_static/vendor.dinhnamuet.led@1.0.a"
+sources:  "out/soong/.intermediates/bionic/libc/libc/android_vendor.33_arm64_armv8-a_cortex-a53_shared/libc.so"
+sources:  "out/soong/.intermediates/bionic/libdl/libdl/android_vendor.33_arm64_armv8-a_cortex-a53_shared/libdl.so"
+sources:  "out/soong/.intermediates/bionic/libm/libm/android_vendor.33_arm64_armv8-a_cortex-a53_shared/libm.so"
+sources:  "out/soong/.intermediates/external/libcxx/libc++_static/android_vendor.33_arm64_armv8-a_cortex-a53_static/libc++_static.a"
+sources:  "out/soong/.intermediates/external/libcxxabi/libc++demangle/android_vendor.33_arm64_armv8-a_cortex-a53_static/libc++demangle.a"
+sources:  "out/soong/.intermediates/system/core/libcutils/libcutils/android_vendor.33_arm64_armv8-a_cortex-a53_shared/libcutils.so"
+sources:  "out/soong/.intermediates/system/core/libutils/libutils/android_vendor.33_arm64_armv8-a_cortex-a53_shared/libutils.so"
+sources:  "out/soong/.intermediates/system/libhidl/libhidlbase/android_vendor.33_arm64_armv8-a_cortex-a53_shared/libhidlbase.so"
+sources:  "out/soong/.intermediates/system/logging/liblog/liblog/android_vendor.33_arm64_armv8-a_cortex-a53_shared/liblog.so"
+sources:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/1.0/vendor.dinhnamuet.led@1.0_genc++/gen/vendor/dinhnamuet/led/1.0/LedAll.cpp"
+sources:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/1.0/vendor.dinhnamuet.led@1.0_genc++_headers/gen/vendor/dinhnamuet/led/1.0/BnHwLed.h"
+sources:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/1.0/vendor.dinhnamuet.led@1.0_genc++_headers/gen/vendor/dinhnamuet/led/1.0/BpHwLed.h"
+sources:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/1.0/vendor.dinhnamuet.led@1.0_genc++_headers/gen/vendor/dinhnamuet/led/1.0/BsLed.h"
+sources:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/1.0/vendor.dinhnamuet.led@1.0_genc++_headers/gen/vendor/dinhnamuet/led/1.0/IHwLed.h"
+sources:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/1.0/vendor.dinhnamuet.led@1.0_genc++_headers/gen/vendor/dinhnamuet/led/1.0/ILed.h"
+sources:  "prebuilts/clang/host/linux-x86/clang-r450784d/lib64/clang/14.0.6/lib/linux/aarch64/libunwind.a"
+sources:  "prebuilts/clang/host/linux-x86/clang-r450784d/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-aarch64-android.a"
+deps:  {
+  file:  "out/soong/.intermediates/bionic/libc/libc/android_vendor.33_arm64_armv8-a_cortex-a53_shared/meta_lic"
+  annotations:  "dynamic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/bionic/libdl/libdl/android_vendor.33_arm64_armv8-a_cortex-a53_shared/meta_lic"
+  annotations:  "dynamic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/bionic/libm/libm/android_vendor.33_arm64_armv8-a_cortex-a53_shared/meta_lic"
+  annotations:  "dynamic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/external/libcxx/libc++_static/android_vendor.33_arm64_armv8-a_cortex-a53_static/meta_lic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/external/libcxxabi/libc++demangle/android_vendor.33_arm64_armv8-a_cortex-a53_static/meta_lic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/prebuilts/clang/host/linux-x86/libclang_rt.builtins/android_vendor.33_arm64_armv8-a_cortex-a53_static/meta_lic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/prebuilts/clang/host/linux-x86/libunwind/android_vendor.33_arm64_armv8-a_cortex-a53_static/meta_lic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/system/core/libcutils/libcutils/android_vendor.33_arm64_armv8-a_cortex-a53_shared/meta_lic"
+  annotations:  "dynamic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/system/core/libutils/libutils/android_vendor.33_arm64_armv8-a_cortex-a53_shared/meta_lic"
+  annotations:  "dynamic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/system/libhidl/libhidlbase/android_vendor.33_arm64_armv8-a_cortex-a53_shared/meta_lic"
+  annotations:  "dynamic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/system/logging/liblog/liblog/android_vendor.33_arm64_armv8-a_cortex-a53_shared/meta_lic"
+  annotations:  "dynamic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/system/tools/hidl/hidl-module-defaults/meta_lic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/1.0/vendor.dinhnamuet.led@1.0_genc++/meta_lic"
+}
+deps:  {
+  file:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/1.0/vendor.dinhnamuet.led@1.0_genc++_headers/meta_lic"
+}

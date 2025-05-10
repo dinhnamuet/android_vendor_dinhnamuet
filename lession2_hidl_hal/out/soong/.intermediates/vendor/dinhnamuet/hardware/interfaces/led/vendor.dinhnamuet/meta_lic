@@ -1,0 +1,6 @@
+package_name:  ""
+module_types:  "hidl_package_root"
+module_classes:  "UNKNOWN"
+projects:  "vendor/dinhnamuet/hardware/interfaces/led"
+is_container:  false
+built:  "//vendor/dinhnamuet/hardware/interfaces/led:vendor.dinhnamuet"
