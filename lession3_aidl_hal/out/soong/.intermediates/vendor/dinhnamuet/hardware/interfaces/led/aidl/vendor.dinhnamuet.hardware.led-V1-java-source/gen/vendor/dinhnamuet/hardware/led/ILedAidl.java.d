@@ -1,0 +1,2 @@
+out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/aidl/vendor.dinhnamuet.hardware.led-V1-java-source/gen/vendor/dinhnamuet/hardware/led/ILedAidl.java : \
+  vendor/dinhnamuet/hardware/interfaces/led/aidl/vendor/dinhnamuet/hardware/led/ILedAidl.aidl

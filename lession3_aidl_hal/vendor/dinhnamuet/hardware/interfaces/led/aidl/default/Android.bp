@@ -1,0 +1,20 @@
+cc_binary {
+    name: "vendor.dinhnamuet.hardware.led-service",
+    relative_install_path: "hw",
+    vendor: true,
+    init_rc: ["vendor.dinhnamuet.hardware.led-service.rc"],
+    vintf_fragments: ["vendor.dinhnamuet.hardware.led-service.xml"],
+    defaults: ["aidl_defaults"],
+    srcs: [
+        "service.cpp",
+        "LedAidl.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder",
+        "liblog",
+        "libutils",
+        "libbinder_ndk",
+        "vendor.dinhnamuet.hardware.led-V1-ndk"
+    ],
+}

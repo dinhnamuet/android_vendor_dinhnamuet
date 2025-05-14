@@ -1,0 +1,9 @@
+package_name:  ""
+module_types:  "aidl_api.go_android/soong/aidl.aidlApiFactory_loadHookModule"
+module_classes:  "UNKNOWN"
+projects:  "vendor/dinhnamuet/hardware/interfaces/led/aidl"
+is_container:  false
+built:  "//vendor/dinhnamuet/hardware/interfaces/led/aidl:vendor.dinhnamuet.hardware.led-api"
+deps:  {
+  file:  "out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/aidl/vendor.dinhnamuet.hardware.led_interface/meta_lic"
+}

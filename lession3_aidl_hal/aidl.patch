@@ -1,0 +1,100 @@
+
+project device/nxp/
+diff --git a/imx8m/evk_8mm/SharedBoardConfig.mk b/imx8m/evk_8mm/SharedBoardConfig.mk
+index 97353858..804407ce 100644
+--- a/imx8m/evk_8mm/SharedBoardConfig.mk
++++ b/imx8m/evk_8mm/SharedBoardConfig.mk
+@@ -61,7 +61,8 @@ BOARD_VENDOR_KERNEL_MODULES += \
+     $(KERNEL_OUT)/drivers/mxc/hantro_v4l2/vsiv4l2.ko \
+     $(KERNEL_OUT)/drivers/rtc/rtc-snvs.ko \
+     $(KERNEL_OUT)/drivers/net/phy/at803x.ko \
+-    $(KERNEL_OUT)/drivers/net/ethernet/freescale/fec.ko
++    $(KERNEL_OUT)/drivers/net/ethernet/freescale/fec.ko \
++    $(KERNEL_OUT)/drivers/demo_led/led.ko
+ endif
+ 
+ # CONFIG_TOUCHSCREEN_GOODIX: goodix.ko, rm67199 mipi-panel touch driver module
+diff --git a/imx8m/evk_8mm/device_framework_matrix.xml b/imx8m/evk_8mm/device_framework_matrix.xml
+index abf6300b..54d1db4c 100644
+--- a/imx8m/evk_8mm/device_framework_matrix.xml
++++ b/imx8m/evk_8mm/device_framework_matrix.xml
+@@ -15,4 +15,21 @@
+             <instance>default</instance>
+         </interface>
+     </hal>
++    <hal format="hidl">
++        <name>vendor.dinhnamuet.led</name>
++        <transport>hwbinder</transport>
++        <version>1.0</version>
++        <interface>
++            <name>ILed</name>
++            <instance>default</instance>
++        </interface>
++    </hal>
++    <hal format="aidl">
++        <name>vendor.dinhnamuet.hardware.led</name>
++        <version>1</version>
++        <interface>
++            <name>ILedAidl</name>
++            <instance>default</instance>
++        </interface>
++    </hal>
+ </compatibility-matrix>
+diff --git a/imx8m/evk_8mm/evk_8mm.mk b/imx8m/evk_8mm/evk_8mm.mk
+index 4c135e34..12282e3a 100644
+--- a/imx8m/evk_8mm/evk_8mm.mk
++++ b/imx8m/evk_8mm/evk_8mm.mk
+@@ -462,3 +462,6 @@ PRODUCT_COPY_FILES += \
+ $(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
+ PRODUCT_SOONG_NAMESPACES += vendor/partner_gms
+ 
++PRODUCT_PACKAGES += \
++    vendor.dinhnamuet.led@1.0-service   \
++    vendor.dinhnamuet.hardware.led-service
+\ No newline at end of file
+diff --git a/imx8m/sepolicy/file_contexts b/imx8m/sepolicy/file_contexts
+index ae15d5d4..a6f3d4cd 100644
+--- a/imx8m/sepolicy/file_contexts
++++ b/imx8m/sepolicy/file_contexts
+@@ -131,3 +131,9 @@
+ 
+ /dev/dmabuf_imx                               u:object_r:ion_device:s0
+ /dev/dma_heap/secure                          u:object_r:dmabuf_system_secure_heap_device:s0
++
++#led hidl
++/vendor/bin/hw/vendor\.dinhnamuet\.led@1\.0-service u:object_r:hal_dinhnamuet_led_default_exec:s0
++
++#led aidl
++/vendor/bin/hw/vendor\.dinhnamuet\.hardware\.led-service u:object_r:hal_aidl_led_default_exec:s0
+
+project vendor/nxp-opensource/kernel_imx/
+diff --git a/arch/arm64/configs/imx8mm_gki.fragment b/arch/arm64/configs/imx8mm_gki.fragment
+index 31aa528e7611..67ce96782f7f 100644
+--- a/arch/arm64/configs/imx8mm_gki.fragment
++++ b/arch/arm64/configs/imx8mm_gki.fragment
+@@ -121,3 +121,5 @@ CONFIG_IMX_GKI_FIX=y
+ 
+ # CONFIG_IMX_IRQSTEER is not set
+ # CONFIG_SOC_IMX9 is not set
++
++CONFIG_DEMO_LED=m
+diff --git a/drivers/Kconfig b/drivers/Kconfig
+index a08c9c384f50..8e6375cb9111 100644
+--- a/drivers/Kconfig
++++ b/drivers/Kconfig
+@@ -240,4 +240,6 @@ source "drivers/counter/Kconfig"
+ source "drivers/most/Kconfig"
+ 
+ source "drivers/mxc/Kconfig"
++
++source "drivers/demo_led/Kconfig"
+ endmenu
+diff --git a/drivers/Makefile b/drivers/Makefile
+index 663659ee9079..beef117b7276 100644
+--- a/drivers/Makefile
++++ b/drivers/Makefile
+@@ -189,3 +189,4 @@ obj-$(CONFIG_INTERCONNECT)	+= interconnect/
+ obj-$(CONFIG_COUNTER)		+= counter/
+ obj-$(CONFIG_MOST)		+= most/
+ obj-y		 		+= mxc/
++obj-$(CONFIG_DEMO_LED)	+= demo_led/

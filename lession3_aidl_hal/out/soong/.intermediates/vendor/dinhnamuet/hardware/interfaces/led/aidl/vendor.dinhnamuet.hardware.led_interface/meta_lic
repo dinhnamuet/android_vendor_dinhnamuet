@@ -1,0 +1,6 @@
+package_name:  ""
+module_types:  "aidl_interface"
+module_classes:  "UNKNOWN"
+projects:  "vendor/dinhnamuet/hardware/interfaces/led/aidl"
+is_container:  false
+built:  "//vendor/dinhnamuet/hardware/interfaces/led/aidl:vendor.dinhnamuet.hardware.led_interface"

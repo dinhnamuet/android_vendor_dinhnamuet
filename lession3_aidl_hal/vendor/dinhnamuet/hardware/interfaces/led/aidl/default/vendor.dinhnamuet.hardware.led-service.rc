@@ -1,0 +1,5 @@
+service vendor.dinhnamuet.hardware.led-service /vendor/bin/hw/vendor.dinhnamuet.hardware.led-service
+    interface aidl vendor.dinhnamuet.hardware.led::ILedAidl/default
+    class hal
+    user system
+    group system

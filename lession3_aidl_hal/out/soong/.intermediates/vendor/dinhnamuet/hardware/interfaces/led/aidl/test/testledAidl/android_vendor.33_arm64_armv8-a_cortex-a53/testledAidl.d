@@ -1,0 +1,2 @@
+out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/aidl/test/testledAidl/android_vendor.33_arm64_armv8-a_cortex-a53/testledAidl:   out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/aidl/test/testledAidl/android_vendor.33_arm64_armv8-a_cortex-a53/unstripped/testledAidl   prebuilts/clang/host/linux-x86/clang-r450784d/bin/llvm-nm   prebuilts/clang/host/linux-x86/clang-r450784d/bin/llvm-objcopy   prebuilts/clang/host/linux-x86/clang-r450784d/bin/llvm-readelf   prebuilts/clang/host/linux-x86/clang-r450784d/bin/llvm-strip
+

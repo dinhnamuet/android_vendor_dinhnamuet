@@ -1,0 +1,1 @@
+-mt aidl_api.go_android/soong/aidl.aidlApiFactory_loadHookModule -r vendor/dinhnamuet/hardware/interfaces/led/aidl -mc UNKNOWN    -d out/soong/.intermediates/vendor/dinhnamuet/hardware/interfaces/led/aidl/vendor.dinhnamuet.hardware.led_interface/meta_lic   -t //vendor/dinhnamuet/hardware/interfaces/led/aidl:vendor.dinhnamuet.hardware.led-api 

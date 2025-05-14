@@ -1,0 +1,15 @@
+aidl_interface {
+    name: "vendor.dinhnamuet.hardware.led",
+    vendor_available: true,
+    srcs: ["vendor/dinhnamuet/hardware/led/*.aidl"],
+    stability: "vintf",
+    owner: "dinhnamuet",
+    backend: {
+        cpp: {
+            enabled: false,
+        },
+        java: {
+            sdk_version: "module_current",
+        },
+    },
+}

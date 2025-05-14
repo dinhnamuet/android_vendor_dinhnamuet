@@ -1,0 +1,1 @@
+-mt aidl_interface -r vendor/dinhnamuet/hardware/interfaces/led/aidl -mc UNKNOWN       -t //vendor/dinhnamuet/hardware/interfaces/led/aidl:vendor.dinhnamuet.hardware.led_interface 

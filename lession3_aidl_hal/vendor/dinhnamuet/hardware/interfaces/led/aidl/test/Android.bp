@@ -1,0 +1,14 @@
+cc_binary {
+    name: "testledAidl",
+    relative_install_path: "hw",
+    vendor: true,
+    srcs: ["testLed.cpp"],
+    shared_libs: [
+        "libbase",
+        "libbinder",
+        "liblog",
+        "libutils",
+        "libbinder_ndk",
+        "vendor.dinhnamuet.hardware.led-V1-ndk"
+    ],
+}
